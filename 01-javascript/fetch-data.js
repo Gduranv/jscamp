@@ -10,7 +10,7 @@ fetch("./data.json") /* fetch es asíncrono */
     jobs.forEach(job => {
       const article = document.createElement('article')
       article.className = 'job-listing-card'
-      
+      article.dataset.titulo = job.data.titulo
       article.dataset.modalidad = job.data.modalidad
       article.dataset.nivel = job.data.nivel
       article.dataset.technology = job.data.technology
